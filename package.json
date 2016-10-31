@@ -1,24 +1,28 @@
 {
   "name": "currency-exporter",
   "version": "0.0.1",
-  "description": "",
+  "description": "Exports currency data from AnkhBotR2, Deepbot and Revlo",
   "main": "main.js",
+  "build": {
+    "appId": "com.electron.currency-exporter"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "pack": "build --dir",
+    "dist": "build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^2.1.2",
     "bootstrap": "^3.3.7",
-    "electron": "^1.4.3",
     "jquery": "^3.1.1",
     "json2csv": "^3.7.0",
     "lodash": "^4.16.4",
     "sql.js": "^0.3.2"
   },
   "devDependencies": {
-    "electron-packager": "^8.2.0"
+    "electron-builder": "^7.15.2",
+    "electron-packager": "^8.2.0",
+    "electron": "^1.4.3"
   }
 }
